@@ -91,6 +91,8 @@
           <li><a href="#commit">Git add y commit</a></li>
           <li><a href="#push-a-github">Subir repositorio a github</a></li>
           <li><a href="#github-pages">Github Pages</a></li>
+          <li><a href="#checkout">checkout</a></li>
+          <li><a href="#actualizar-gh-pages">Actualizar gh-pages</a></li> 
         </ul>
       </div><!--/left-->
       
@@ -241,8 +243,88 @@
 
                       </div>
                     </div>
+                    <!-- _____________________________________________ -->
+                    <div class="page-header">
+                     <a name="checkout"></a>
+                     <h3> checkout </h3> 
+                    </div>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/commit.jpg" alt="commit">
+                       
+                      </a>
+                      <div class="media-body">
+                           <p>
+                          Al crear la rama gh-pages podemos acceder a lo que publica Github a través de esta URL: nombreDelUsuario.github.io/nombreDelRepositorio
+
+                          Para cambiar de rama utilizamos siempre el comando<br> <br>
+                          <b>git checkout master</b> <br> o <br><b>git checkout gh-pages</b>
+
+
+
+                         
+
+                          </p>
+                          
+
+                      </div>
+                    </div>
+                    <!-- _____________________________________________ -->
+                    <div class="page-header">
+                     <a name="actualizar-gh-pages"></a>
+                     <h3> Actualizar gh-pages </h3> 
+                    </div>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/commit.jpg" alt="commit">
+                       
+                      </a>
+                      <div class="media-body">
+                           <p>
+                         
+                          Si normalmente desarrollamos en la rama master y queremos que los cambios que hemos hecho se publiquen en la web que genera Github con gh-pages, debemos seguir el siguiente workflow:
+
+
+                          <br>
+                          Trabajamos con normalidad en la rama master y en algún momento decidimos subir cambios a Github:
+                          <br> <b> git push origin master </b>
+                          <br><br>
+                          A continuación, cambiamos a la rama gh-pages:
+                          <br><br>
+                          <b>git checkout gh-pages </b>
+                          <br><br>
+                          Mezclamos los cambios de la rama master sobre la rama gh-pages que obviamente estará desactualizada:
+                          <br> <br>  
+                          <b>git merge master</b>
+                          <br><br> 
+                          Subimos los cambios a la rama gh-pahes en Github
+                          <br><br>
+                          <b> git push origin gh-pages</b>
+                          <br><br>
+                          Lo que acabamos de hacer es subir los cambios de la rama de desarrollo a la aplicación web en Github. A continuación, si queremos seguir desarrollando, volvemos a la rama master:
+                          <br><br>
+                          <b>git checkout master</b>
+                          <br><br>
+                          Y este workflow lo podemos repetir hasta el infinito
+
+
+
+
+
+
+
+
+
+
+                          </p>
+                          
+
+                      </div>
+                    </div>
   	</div><!--/row-->
 </div><!--/container-->
+
+
 
 
 
