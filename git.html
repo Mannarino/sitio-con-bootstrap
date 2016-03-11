@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Mannarino Git-Github</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+         <style>
+               ul li{
+                border-bottom: solid #eee 1px;
+               }
+               img{
+                    border: solid #eee 1px;
+                    border-radius: 6px;
+               }
+               .margin-botton{
+                margin-bottom: 30px;
+               }
+               .media{
+                    border-bottom: solid #eee 3px;
+                    padding-bottom: 30px;
+               } 
+               .page-header{
+                
+                padding: 1px 30px;
+                border-radius: 6px;
+               }
+               .media-body{
+                font-family: 'Raleway', sans-serif;
+                line-height: 30px;
+                padding-left: 10px;
+               }
+         
+         </style>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script type='text/javascript'>
+         
+                  $(document).ready(function() {
+                  $('.row').hide();
+                  $('.row').fadeIn(2000);
+
+                  });
+          
+             </script>
+	</head>
+	<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="http://proyectouno.890m.com/index.html" target="_blank" class="navbar-brand" >Mannarino Front-End</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="responsive.html">Responsive design</a>
+        </li>
+        <li>
+          <a href="git.html">Git y Github</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</nav>
+
+
+
+<!--main-->
+<div class="container">
+	<div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+        <ul class="nav nav-pills nav-stacked" id="sidebar">
+          <li class="active"><a href="#sec0">Git y Github</a></li>
+          <li><a href="#bash">Git bash</a></li>
+          <li><a href="#config">Configurar Git</a></li>
+          <li><a href="#moverse">Moverse y git init</a></li>
+          <li><a href="#commit">Git add y commit</a></li>
+          <li><a href="#push-a-github">Subir repositorio a github</a></li>
+          <li><a href="#github-pages">Github Pages</a></li>
+        </ul>
+      </div><!--/left-->
+      
+      <!--right-->
+      <div class="col-md-9">
+                 <div class="page-header">
+                     <a name="bash"></a>
+                     <h3>Git bash</h3> 
+                    </div>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/bash.jpg" alt="sistema-grillas">
+                      </a>
+                      <div class="media-body">
+                           <p>
+                           Luego de la instalación de git en nuestra pc, de manera local, lo primero que tenemos que hacer es buscar el icono de git bash para empezar a trabajar con git desde la consola.
+                         </p>
+                         
+                      </div>
+                    </div>
+                    <!-- _____________________________________________ -->
+                   
+                    <div class="page-header">
+                    <a name="config"></a>
+                     <h3> Configurar git</h3> 
+                    </div>
+                     <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/config-git.jpg" alt="config">
+                      </a>
+                      <div class="media-body">
+                           
+                          <div class="panel panel-default" >
+                            <div class="panel-body">
+                             git config --global user.name "tu nombre"  <br>
+                             <br>
+                             git config --global user.email "tu correo electronico"
+                            </div>
+                            <div class="panel-footer">Así configuramos git</div>
+                          </div>
+                          <br>
+                          <div class="panel panel-default" >
+                            <div class="panel-body">
+                             git config --global --list
+                            </div>
+                            <div class="panel-footer">Así comprobamos si los datos ingresados en la configuración son los correctos</div>
+                          </div>
+                          <br>
+                      </div>
+                    </div>
+                     <!-- _____________________________________________ -->
+                       <div class="page-header">
+                    <a name="moverse"></a>
+                     <h3> Moverse por directorios y git init</h3> 
+                    </div>
+                     <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/moverse.jpg" alt="moverse con git">
+                      </a>
+                      <div class="media-body">
+                           
+                          <div class="panel panel-default" >
+                            <div class="panel-body">
+                             ls <br>
+                             <br>
+                            cd nombreDeLaCarpeta <br>
+                            <br>
+                            git init
+                            </div>
+                            <div class="panel-footer">Así nos movemos por carpetas y directorios, y una vez elegida la carpeta, con el comando git init iniciamos git dentro de esa carpeta</div>
+                          </div>
+                          <br>
+                          
+                      </div>
+                    </div>
+                     <!-- _____________________________________________ -->
+                     <div class="page-header">
+                    <a name="commit"></a>
+                     <h3> Git add y git commit</h3> 
+                    </div>
+                     <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/commit.jpg" alt="commit">
+                      </a>
+                      <div class="media-body">
+                           
+                          <div class="panel panel-default" >
+                            <div class="panel-body">
+                             git add -A<br>
+                             <br>
+                            git commit -m "comentario a colocar"<br>
+                            <br>
+                            git init
+                            </div>
+                            <div class="panel-footer">Comandos para subir cambios y archivos al repositorio local</div>
+                          </div>
+                          <br>
+                          
+                      </div>
+                    </div>
+                     <!-- _____________________________________________ -->
+
+                     <div class="page-header">
+                     <a name="push-a-github"></a>
+                     <h3> Subir repositorio a Github  </h3> 
+                    </div>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/commit.jpg" alt="commit">
+                       
+                      </a>
+                      <div class="media-body">
+                           <p>
+                          1- Nos registramos y creamos una cuenta en github. <br>
+                          2- Creamos un repositorio nuevo para el proyecto en cuestión que querramos subir.  <br>
+                          3- Desde la consola de git en nuestro pc, nos posicionamos en la carpeta que queremos subir, luego la vínculamos al servidor remoto de git con  este comando: git remote add origin https:url-que-da-github
+                          <br>
+                          4- Luego Empujamos los cambios al repositorio remoto vinculado en el paso anterior, con este comando: git push origin master</p>
+                          <br>
+                          
+
+                         <p>
+                           
+                         </p>
+                      </div>
+                    </div>
+                    <!-- _____________________________________________ -->
+                    <div class="page-header">
+                     <a name="github-pages"></a>
+                     <h3> Github pages </h3> 
+                    </div>
+                    <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object" src="img/commit.jpg" alt="commit">
+                       
+                      </a>
+                      <div class="media-body">
+                           <p>
+                          Con esto podemos crear una pagina para cada proyecto que tengamos en github,para hacer esto tenemos que: <br>
+                          1- Agregar nuestro proyecto a github, luego ejecutamos estos comandos:<br>
+                          2- git branch gh-pages ( con esto creamos una nueva rama que tenga online la pagina en cuestión).
+                          <br>
+                          <br>
+                          3- Luego subimos los archivos a esta rama con estos comandos: git push gh-pages
+                          <br>
+                          4- ¿Ahora como vemos los resultados de esta pagina? <br> yendo a esta dirección url: nombreDelUsuario.github.io/nombreDelRepositorio </p>
+                          
+
+                      </div>
+                    </div>
+  	</div><!--/row-->
+</div><!--/container-->
+
+
+
+	<!-- script references -->
+		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
